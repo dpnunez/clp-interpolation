@@ -14,8 +14,6 @@ from PyQt5.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QTextEdit, QGroupBox, QFormLayout, QPushButton, QLineEdit
 )
 
-
-
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
