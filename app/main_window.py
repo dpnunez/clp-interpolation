@@ -1,7 +1,9 @@
 from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPixmap, QIntValidator
+from PyQt5.QtGui import QIntValidator
 from ctypes import *
 import time
+from app.image_window import ImageWindow
+
 
 so_file = "./fractal.so"
 c_functions = CDLL(so_file)
@@ -12,25 +14,7 @@ from PyQt5.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QTextEdit, QGroupBox, QFormLayout, QPushButton, QLineEdit
 )
 
-class ImageWindow(QMainWindow):
-    def __init__(self, image_path):
-        super().__init__()
 
-        self.setWindowTitle("Fractal Image")
-        self.setGeometry(100, 100, 800, 800)
-
-        layout = QVBoxLayout()
-
-        label = QLabel()
-        pixmap = QPixmap(image_path)
-        label.setPixmap(pixmap)
-        label.setAlignment(Qt.AlignCenter)
-
-        layout.addWidget(label)
-
-        container = QWidget()
-        container.setLayout(layout)
-        self.setCentralWidget(container)
 
 class MainWindow(QMainWindow):
     def __init__(self):

@@ -42,3 +42,6 @@ dist/
 # Arquivos gerados pela documentação
 docs/_build/
 site/
+*.out
+*.so
+*.ppm
