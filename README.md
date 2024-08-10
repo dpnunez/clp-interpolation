@@ -17,7 +17,7 @@ Este é um projeto que consiste em desenvolver uma interface em Python utilizand
 ## Como executar
 
 1. Clone o repositório para o seu ambiente local.
-2. Certifique-se de ter o Python 3.x instalado em sua máquina.
+2. Garanta ter o Python 3.x instalado em sua máquina.
 3. Instale as dependências do projeto utilizando o comando `pip install PyQt5` e `pip install --upgrade pyinstaller`.
 4. Compile a parte em C do projeto utilizando o comando `make all`.
 5. O comando anterior gerou um arquivo executável chamado `./dist/main`, basta executa-lo através do comando `./dist/main`.
